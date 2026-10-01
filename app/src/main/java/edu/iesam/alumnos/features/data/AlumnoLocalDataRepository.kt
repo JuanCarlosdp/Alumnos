@@ -10,4 +10,9 @@ class AlumnoLocalDataRepository(
         return localDataSource.obtenerAlumnos()
     }
 
+    override fun guardarAlumno(alumno: Alumno) {
+        localDataSource.guardarAlumno(alumno)
+    }
+
+
 }

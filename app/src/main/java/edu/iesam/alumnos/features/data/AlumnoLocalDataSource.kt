@@ -9,4 +9,8 @@ class AlumnoLocalDataSource {
     fun obtenerAlumnos(): List<Alumno> {
         return alumnos
     }
+
+    fun guardarAlumno(alumno: Alumno) {
+        alumnos.add(alumno)
+    }
 }

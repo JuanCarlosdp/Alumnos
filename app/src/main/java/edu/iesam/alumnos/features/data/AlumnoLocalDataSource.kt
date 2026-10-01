@@ -13,4 +13,8 @@ class AlumnoLocalDataSource {
     fun guardarAlumno(alumno: Alumno) {
         alumnos.add(alumno)
     }
+
+    fun borrarAlumno(dni: String) {
+        alumnos.removeIf { it.dni == dni }
+    }
 }

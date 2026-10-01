@@ -12,8 +12,12 @@ class MainActivity : AppCompatActivity() {
 
         val view = View()
 
-        view.guardar(Alumno("Juan","García López","12345678A"))
+        view.guardar(Alumno("12345678A","Juan","García López"))
+        view.guardar(Alumno("12345678B","Marta","Díaz Pérez"))
         view.mostrarAlumnos()
+        view.borrar("12345678B")
+        view.mostrarAlumnos()
+
 
     }
 }
